@@ -14,7 +14,7 @@ terraform {
 
 module "servers" {
   source  = "./modules/ec2"
-  region = "us-east-1"
+  region = var.image
   name = "teste"
   image = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
   key_name =  "awskey"
