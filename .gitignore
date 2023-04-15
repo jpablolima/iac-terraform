@@ -14,3 +14,4 @@ start-capgemini/keys.txt
 start-capgemini/.terraform.lock.hcl
 start-capgemini/ec2/.terraform.lock.hcl
 start-capgemini/s3/.terraform.lock.hcl
+.terraform.lock.hcl
