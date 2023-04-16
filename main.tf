@@ -16,7 +16,6 @@ terraform {
 
 module "servers" {
   source  = "./modules/ec2"
-  # region = "us-east-1"
   region = var.region
   name = var.name_instance
   image = var.image
