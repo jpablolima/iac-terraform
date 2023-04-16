@@ -13,19 +13,17 @@ terraform {
 }
 
 
-variable "name" {
-  description = "Name"
-  type = string  
-}
 
 module "servers" {
   source  = "./modules/ec2"
-  region = "us-east-1"
-  name = var.name
-  image = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
-  key_name = "awskey"
-  instance_type = "t2.micro"
-  owners = "099720109477"
+  # region = "us-east-1"
+  region = var.region
+  name = var.name_instance
+  image = var.image
+  key_name = var.key_name
+  instance_type = var.instance_type
+  owners = var.owners
   servers = 1
 
 }
+

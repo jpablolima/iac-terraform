@@ -25,7 +25,7 @@ variable "owners" {
 
 
 variable "image" {
-    description = "Images Ubuntu Focal-20.04-amd64-server "
+    description = "Images Ubuntu Focal-20.04-amd64-server"
     type = string
 }
 
