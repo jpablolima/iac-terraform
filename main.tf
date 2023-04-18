@@ -12,9 +12,7 @@ terraform {
   }
 }
 
-
 module "security_group" {
-
   source = "./modules/securitygroup"
   description = "security group"
   name = "security-group"
@@ -28,8 +26,6 @@ module "security_group" {
   prefix_list_ids  = [""]
 
 }
-
-
 
 module "servers" {
   source  = "./modules/ec2"
