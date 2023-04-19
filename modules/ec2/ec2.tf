@@ -27,4 +27,5 @@ resource "aws_instance" "web" {
       "Project": "My project"
       "Owner" = "João Pablo"
     }
+    # vpc_security_group_ids = [ module.security_group.aws_security_group.ssh.id  ]
 }

@@ -40,7 +40,6 @@ output "keyssh" {
 
 
 
-output "security_group_name" {
-  description = "security group name"
-  value = var.security_group_name
-}
+# output "security_group_id" {
+#   value = aws_security_group.this.id
+# }
