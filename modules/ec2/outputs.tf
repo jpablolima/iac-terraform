@@ -38,8 +38,7 @@ output "keyssh" {
   
 }
 
-
-
 output "servers" {
    value = var.servers
 }
+

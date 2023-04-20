@@ -14,7 +14,7 @@ terraform {
 
 module "security_group" {
   source = "./modules/securitygroup"
-  name = "my-security-group"
+  name = var.security_group_name
   description = "My security group"
   from_port = 22
   to_port = 22
@@ -33,10 +33,10 @@ module "servers" {
   image = var.image
   key_name = var.key_name
   instance_type = var.instance_type
-  # security_group_id= module.security_group.security_group_id
-  
   owners = var.owners
   servers = 1
+
+  
 
 }
 

@@ -28,12 +28,8 @@ variable "key_name" {
     type = string
 }
 
-# variable "security_group_id" {
-#     description = "security group id"
-#     type = string
-  
-# }
 
 variable "servers" {
    
 }
+

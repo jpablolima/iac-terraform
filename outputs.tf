@@ -41,6 +41,11 @@ output "keyssh" {
 
 
 
-# variable "security_group_id" {
-#   type = string
-# }
+
+output "security_group_name" {
+    description = "security group name"
+    value = var.security_group_name
+  
+}
+
+
