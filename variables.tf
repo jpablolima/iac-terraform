@@ -34,7 +34,8 @@ variable "key_name" {
 
 # Variable of the Security group 
 
-variable "security_group_id" {
-  description = "The name of the security group"
+# variable "security_group_id" {
+#   description = "The name of the security group"
+# #   default = "sg-0123456789abcdef0"
 #   type = string
-}
+# }

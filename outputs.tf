@@ -31,6 +31,7 @@ output "ec2_public_ip" {
 output "name_instance" {
     description = "Name Instance"
     value = var.name_instance
+    
 }
 
 output "keyssh" {
@@ -40,6 +41,6 @@ output "keyssh" {
 
 
 
-# output "security_group_id" {
-#   value = aws_security_group.this.id
+# variable "security_group_id" {
+#   type = string
 # }
