@@ -14,7 +14,7 @@ terraform {
 
 module "security_group" {
   source = "./modules/security_group"
-  name_prefix =  "web"
+  name =  "web"
   description = "Security group for web servers"
   ingress_port = 8080
   ingress_protocol = "tcp"

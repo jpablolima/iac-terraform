@@ -1,5 +1,6 @@
 resource "aws_security_group" "this" {
-  name_prefix = var.name_prefix
+#   name_prefix = var.name_prefix
+  name_prefix = var.name
   description = var.description
 
 
@@ -14,5 +15,9 @@ resource "aws_security_group" "this" {
     security_groups = []
     self = false
   } ]
+
+    tags = {
+      Name = var.name
+    }
 
 }
