@@ -1,4 +1,4 @@
-resource "aws_security_group" "security_group" {
+resource "aws_security_group" "ssh" {
   name = var.name
   description = var.description
 

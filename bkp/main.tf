@@ -35,8 +35,7 @@ module "servers" {
   instance_type = var.instance_type
   owners = var.owners
   servers = 1
-
-  
+  security_groups = [module.vpc.security_group_id]
 
 }
 
