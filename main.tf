@@ -25,9 +25,8 @@ module "security_group" {
 module "ec2_instance" {
     source = "./modules/ec2"
     ami = "ami-007855ac798b5175e"
-    instance_type = "t2.micro"
-    key_name = "awskey"
+    image = var.image
+    instance_type = var.instance_type
+    key_name = var.key_name
     security_group_id = [module.security_group.security_group_id]
-    
-  
 }

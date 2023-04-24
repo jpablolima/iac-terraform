@@ -8,15 +8,24 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "name" {
+variable "instance_name" {
     type = string
     default = "web-server"
 }
+
+variable "image" {
+    description = "Images Ubuntu Focal-20.04-amd64-server"
+    type = string
+  
+}
+
 
 variable "key_name" {
     description = "key"
     type = string
 }
+
+
 
 variable "security_group_id" {}
 
