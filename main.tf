@@ -28,6 +28,4 @@ module "ec2_instance" {
     instance_type = "t2.micro"
     key_name = "awskey"
     security_group_id = [module.security_group.security_group_id]
-    
-  
 }

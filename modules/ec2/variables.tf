@@ -8,7 +8,7 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
-variable "name" {
+variable "instance_name" {
     type = string
     default = "web-server"
 }
