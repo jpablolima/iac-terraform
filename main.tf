@@ -16,7 +16,7 @@ module "security_group" {
   source = "./modules/security_group"
   name =  "web"
   description = "Security group for web servers"
-  ingress_port = 8080
+  ingress_port = [  8080, 22  ]
   ingress_protocol = "tcp"
   ingress_cidr_blocks = ["0.0.0.0/0"]
 }

@@ -9,8 +9,8 @@ variable "description" {
 }
 
 variable "ingress_port" {
-    type = number
-    default = 8080
+    type = list(number)
+   
 }
 
 variable "ingress_protocol" {
