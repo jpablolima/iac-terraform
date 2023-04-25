@@ -12,6 +12,7 @@ data "aws_ami" "ubuntu" {
   }
     owners = [  "099720109477" ]
   
+  
 }
 
 resource "aws_instance" "web_server" {
@@ -20,8 +21,7 @@ resource "aws_instance" "web_server" {
     key_name = var.key_name
     vpc_security_group_ids =  var.security_group_id
     
-
-  
+ 
   tags = {
     Name = var.instance_name
   }

@@ -13,11 +13,9 @@ variable "key_name" {
     default = "awskey"
 }
 
-
-
 variable "image" {
     description = "Images Ubuntu Focal-20.04-amd64-server"
     default = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
     type = string
-  
 }
+

@@ -36,5 +36,9 @@ output "ami" {
 output "os_version" {
     description = "Operating system version on the instance"
     value = module.ec2_instance.os_version
-  
+}
+
+output "image" {
+  description = "Image name"
+  value = var.image
 }
