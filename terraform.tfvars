@@ -1,1 +1,1 @@
-image = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
+image = "Ubuntu 22.04 LTS Jammy"

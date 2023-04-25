@@ -30,3 +30,4 @@ module "ec2_instance" {
     key_name = var.key_name
     security_group_id = [module.security_group.security_group_id]
 }
+

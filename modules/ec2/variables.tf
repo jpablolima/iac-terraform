@@ -19,7 +19,6 @@ variable "image" {
   
 }
 
-
 variable "key_name" {
     description = "key"
     type = string
