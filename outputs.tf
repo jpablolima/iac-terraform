@@ -42,3 +42,11 @@ output "image" {
   description = "Image name"
   value = var.image
 }
+
+
+
+# Outputs DB
+
+output "database_name" {
+  value = module.postgresql.database_name
+}
