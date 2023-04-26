@@ -13,11 +13,12 @@ provider "postgresql" {
     username = var.username
     password = var.password
     database = var.database
+    
 }
 
 resource "postgresql_database" "db" {
     name = var.database_instance_name
-    
+        
     
   
 }

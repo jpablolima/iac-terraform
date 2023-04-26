@@ -47,6 +47,18 @@ output "image" {
 
 # Outputs DB
 
-output "database_name" {
-  value = module.postgresql.database_name
+# output "database_name" {
+#   value = module.postgresql.database_name
+# }
+
+
+output "database_info" {
+    value = {
+        name = module.postgresql.database_name
+        port = module.postgresql.port
+        host = module.postgresql.host
+        username = module.postgresql.username
+        database = module.postgresql.database
+    }
+  
 }
