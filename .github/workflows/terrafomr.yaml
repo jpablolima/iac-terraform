@@ -1,0 +1,22 @@
+name: Deploy IAC Terraform
+
+on: 
+    push: 
+        branches: 
+            - main
+
+jobs:
+    terraform:
+        runs-on: ubuntu-20.04
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up Terraform
+              uses: hashicorp/setup-terraform@v1
+              with: 
+                terraform_version: 1.4.0
+
+            - name: Apply Terraform changes
+              run: terraform apply -auto-approve
