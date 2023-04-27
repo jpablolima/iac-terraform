@@ -32,13 +32,3 @@ module "ec2_instance" {
 }
 
 
-
-module "postgresql" {
-  source = "./modules/database"
-  database_instance_name = "mydb"
-  database_instance_name_host   = "localhost"
-  port = 5432
-  username = "admin"
-  password = "admin"
-  database = "myadmin"
-}
