@@ -31,3 +31,4 @@ module "ec2_instance" {
     security_group_id = [module.security_group.security_group_id]
 }
 
+

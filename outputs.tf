@@ -42,3 +42,5 @@ output "image" {
   description = "Image name"
   value = var.image
 }
+
+
