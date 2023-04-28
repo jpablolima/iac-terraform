@@ -18,4 +18,9 @@ variable "image" {
     default = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"
     type = string
 }
-
+variable "aws_profile" {
+    type = string
+    description = ""
+    default = "terraform"
+  
+}
