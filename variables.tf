@@ -19,8 +19,8 @@ variable "image" {
     type = string
 }
 variable "aws_profile" {
-    type = bool
+    type = string
     description = ""
-    default = true
+    default = "terraform"
   
 }
