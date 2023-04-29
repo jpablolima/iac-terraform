@@ -24,3 +24,21 @@ variable "aws_profile" {
     default = "terraform"
   
 }
+
+
+variable "aws_profile" {
+    type = string
+    description = ""
+    default = "terraform"
+  
+}
+
+# variable "AWS_ACCESS_KEY_ID" {
+#     type = string
+  
+# }
+
+# variable "AWS_SECRET_ACCESS_KEY" {
+#     type = string
+#     default = "${{ secrets.AWS_ACCESS_KEY_ID }}"
+# }
