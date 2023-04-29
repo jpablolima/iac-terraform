@@ -21,6 +21,6 @@ variable "image" {
 variable "aws_profile" {
     type = bool
     description = ""
-    default = "null"
+ 
   
 }
