@@ -1,6 +1,6 @@
 provider "aws" {
   region     = var.aws_region
-  profile = var.is_aws_profile_used ? var.aws_cli_profile : null
+  profile = var.aws_profile ? var.aws_cli_profile : null
   # profile    = var.aws_profile
 }
 
