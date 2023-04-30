@@ -25,10 +25,10 @@ variable "aws_profile" {
   
 }
 
-variable "aws_access_key" {
+variable "AWS_ACCESS_KEY_ID" {
     type = string
 } 
-variable "aws_secrets_access_key" {
+variable "AWS_SECRET_ACCESS_KEY" {
      type = string
 } 
 
