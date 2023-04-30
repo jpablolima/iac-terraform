@@ -25,14 +25,6 @@ variable "aws_profile" {
   
 }
 
-
-variable "aws_profile" {
-    type = string
-    description = ""
-    default = "terraform"
-  
-}
-
 # variable "AWS_ACCESS_KEY_ID" {
 #     type = string
   
