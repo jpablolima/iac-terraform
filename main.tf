@@ -1,19 +1,9 @@
 provider "aws" {
   region     = var.aws_region
   profile = var.aws_profile 
-  access_key= var.aws_access_key
-  secret_key= var.aws_secrets_access_key
-
 }
 
-terraform {
-  backend "s3" {
-    bucket = "mybucket-terraform-tfstate"
-    key = "terraform.tfstate"
-    region = "us-east-1"
-    
-  }
-}
+
 
 module "security_group" {
   source = "./modules/security_group"
