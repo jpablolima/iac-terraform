@@ -1,7 +1,7 @@
 name: Deploy Infrastructure with Terraform
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
