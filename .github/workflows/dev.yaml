@@ -3,7 +3,7 @@ name: Deploy Infrastructure with Terraform
 on:
   push:
     branches:
-      - infra
+      - main
 
 jobs:
   build:
